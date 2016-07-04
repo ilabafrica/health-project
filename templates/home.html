@@ -10,61 +10,7 @@
     <body>
         <div class="app">
             <section class="app__content">
-                <aside class="sidemenu">
-                    <ul class="sidemenu__menu">
-                        <li role="presentation" class="sidemenu__menu__item">
-                            <a href="">
-                                <div class="icon">
-                                    <i class="fa fa-home"></i>
-                                </div>
-                                <div class="text">
-                                    HOME
-                                </div>
-                            </a>
-                        </li>
-                        <li role="presentation" class="sidemenu__menu__item">
-                            <a href="">
-                                <div class="icon">
-                                    <i class="fa fa-users"></i>
-                                </div>
-                                <div class="text">
-                                    CHOWs
-                                </div>
-                            </a>
-                        </li>
-                        <li role="presentation" class="sidemenu__menu__item">
-                            <a href="">
-                                <div class="icon">
-                                    <i class="fa fa-hospital-o"></i>
-                                </div>
-                                <div class="text">
-                                    CLINICS
-                                </div>
-                            </a>
-                        </li>
-                        <li role="presentation" class="sidemenu__menu__item">
-                            <a href="">
-                                <div class="icon">
-                                    <i class="fa fa-user"></i>
-                                </div>
-                                <div class="text">
-                                    PATIENTS
-                                </div>
-                            </a>
-                        </li>
-                        <li role="presentation" class="sidemenu__menu__item">
-                            <a href="">
-                                <div class="icon">
-                                    <i class="fa fa-calendar"></i>
-                                </div>
-                                <div class="text">
-                                    FOLLOW-UP VISITS
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </aside>
-                <main class="main">
+                <main class="main full">
                     <nav class="navbar main__nav">
                         <div class="container-fluid">
                             <!-- Brand and toggle get grouped for better mobile display -->
@@ -85,6 +31,50 @@
                                   <input type="text" class="form-control" placeholder="Search Patient">
                                 </div>
                               </form>
+                              <ul class="nav navbar-nav navbar-left">
+                                <li class="dropdown">
+                                  <a class="main-menu" href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    Main Menu <span class="caret"></span>
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="patients.html">
+                                            Patients
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li>
+                                        <a href="chows.html">
+                                            CHOWs
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li>
+                                        <a href="clinics.html">
+                                            Clinics
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li>
+                                        <a href="follow-up-visits.html">
+                                            Follow-up Visits
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li>
+                                        <a href="reports.html">
+                                            Reports
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li>
+                                        <a href="#">
+                                            Data Imports
+                                        </a>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
                               <ul class="nav navbar-nav navbar-right">
                                 <li class="dropdown">
                                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -108,145 +98,10 @@
                             </div>
                         </div>
                     </nav>
-                    <div class="main__content">
-                        <h3>Details</h3>
-                        <div>List your CHOWs</div>
-
-                        <div class="main__tabs">
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-tabs" role="tablist">
-                                <li role="presentation" class="active"><a href="#nomonde-khoza" aria-controls="nomonde-khoza" role="tab" data-toggle="tab">Home</a></li>
-                                <li role="presentation"><a href="#edit-chow-info" aria-controls="edit-chow-info" role="tab" data-toggle="tab">Edit CHOW Info</a></li>
-                            </ul>
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane active" id="nomonde-khoza">
-                                    <div class="table__holder">
-                                        <div class="table__filter clearfix">
-                                            <div class="pull-right">
-                                                <form class="form-inline">
-                                                    <div class="form-group">
-                                                        <input type="email" class="form-control" id="exampleInputEmail3" placeholder="e.g John">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" placeholder="unique Identifier">
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                        <table class="table table-hover table-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <th></th>
-                                                    <th>Unique Identifier</th>
-                                                    <th>First Name</th>
-                                                    <th>Surname</th>
-                                                    <th>Email Address</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <input type="radio" name="select" />
-                                                    </td>
-                                                    <td>2099838826</td>
-                                                    <td>Nomonde</td>
-                                                    <td>Khoza</td>
-                                                    <td>nom@gmail.com</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <input type="radio" name="select" />
-                                                    </td>
-                                                    <td>1063838826</td>
-                                                    <td>Joan</td>
-                                                    <td>Masapi</td>
-                                                    <td>jmasapi@gmail.com</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <input type="radio" name="select" />
-                                                    </td>
-                                                    <td>90127238826</td>
-                                                    <td>Jim</td>
-                                                    <td>Ogotu</td>
-                                                    <td>jogutu@gmail.com</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <input type="radio" name="select" />
-                                                    </td>
-                                                    <td>2009228826</td>
-                                                    <td>Timothy</td>
-                                                    <td>Mwanza</td>
-                                                    <td>timothy.mwanza@gmail.com</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <input type="radio" name="select" />
-                                                    </td>
-                                                    <td>1000838826</td>
-                                                    <td>Jeremy</td>
-                                                    <td>Wachira</td>
-                                                    <td>jrmwachira@gmail.com</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <input type="radio" name="select" />
-                                                    </td>
-                                                    <td>7923838826</td>
-                                                    <td>Tom</td>
-                                                    <td>Matano</td>
-                                                    <td>tom.matano@gmail.com</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <input type="radio" name="select" />
-                                                    </td>
-                                                    <td>2009228826</td>
-                                                    <td>Barack</td>
-                                                    <td>Makumi</td>
-                                                    <td>barack.makumi@gmail.com</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <input type="radio" name="select" />
-                                                    </td>
-                                                    <td>1000838826</td>
-                                                    <td>Harry</td>
-                                                    <td>Matanda</td>
-                                                    <td>harry.matanda@gmail.com</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <input type="radio" name="select" />
-                                                    </td>
-                                                    <td>7923838826</td>
-                                                    <td>Humphrey</td>
-                                                    <td>Omondi</td>
-                                                    <td>humphrey.omondi@gmail.com</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <nav>
-                                          <ul class="pager">
-                                            <li class="previous">
-                                                <a href="#">
-                                                    <span aria-hidden="true">&larr;</span> Previous
-                                                </a>
-                                            </li>
-                                            <li class="next">
-                                                <a href="#">
-                                                    Next <span aria-hidden="true">&rarr;</span>
-                                                </a>
-                                            </li>
-                                          </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-                                <div role="tabpanel" class="tab-pane" id="edit-chow-info">
-                                </div>
-                            </div>
+                    <div class="main__content full">
+                        <div class="backdrop">
+                            <h1>IMPILO</h1>
+                            <h2>Health in My Hands</h2>
                         </div>
                     </div>
                 </main>
