@@ -2,31 +2,53 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-aside.sidemenu{
-    width: 15%;
+.sidemenu{
+    width: 0%;
     float: left;
     padding-top: 5px;
     background-color: #f9f9f9;
     height: 100%;
 }
 
-aside.sidemenu .sidemenu__menu {
+.sidemenu.full, .sidemenu.followup{
+    width: 100%;
+}
+
+.sidemenu.followup .sidemenu__menu li{
+    height: 180px;
+    padding: 48.5px;
+    font-size: 35px !important;
+}
+
+.sidemenu.full .user-name{
+    font-weight: 900px;
+}
+
+.sidemenu.full .sidemenu__menu li{
+    height: 160px;
+}
+
+.sidemenu .sidemenu__menu {
     list-style: none;
     padding-left: 0;
     background-color: #fff;
 }
 
-aside.sidemenu .sidemenu__menu li{
+.sidemenu .sidemenu__menu li{
     text-align: center;
     height: 120px;
-    padding: 34.5px;
+    padding: 44.5px;
     border-bottom: 1px solid #f9f9f9;
     border-right: 1px solid #f9f9f9;
 
     background-image: linear-gradient(-180deg, #FAFAFA 0%, #efefef 100%);
 }
 
-aside.sidemenu .sidemenu__menu li.sidemenu__menu__item a {
+.sidemenu__menu__item.action{
+    background-image: linear-gradient(-180deg, #C5F3FF 0%, #93E2FF 100%);
+}
+
+.sidemenu .sidemenu__menu li.sidemenu__menu__item a {
     text-decoration: none;
     color: #696969;
 }
@@ -35,22 +57,22 @@ aside.sidemenu .sidemenu__menu li.sidemenu__menu__item a {
     color: #2984D3 !important;
 }
 
-aside.sidemenu .sidemenu__menu li.sidemenu__menu__item--active, li.sidemenu__menu__item, a {
+.sidemenu .sidemenu__menu li.sidemenu__menu__item--active, li.sidemenu__menu__item, a {
 
 }
 
-aside.sidemenu .sidemenu__menu li.sidemenu__menu__item:hover a{
+.sidemenu .sidemenu__menu li.sidemenu__menu__item:hover a{
     color: #2984D3 !important;
 };
 
 
-aside.sidemenu .sidemenu__menu li.sidemenu__menu__item:hover a .icon .fa{
+.sidemenu .sidemenu__menu li.sidemenu__menu__item:hover a .icon .fa{
 }
 
-aside.sidemenu .sidemenu__menu li.sidemenu__menu__item:hover a .text {
+.sidemenu .sidemenu__menu li.sidemenu__menu__item:hover a .text {
 }
 
-aside.sidemenu .sidemenu__menu li.sidemenu__menu__item a .icon {
+.sidemenu .sidemenu__menu li.sidemenu__menu__item a .icon {
     font-size: 30px;
     margin-bottom: 5px;
 }
@@ -164,4 +186,39 @@ main.main{
 
 .form-holder {
     padding: 25px;
+}
+
+.user-name{
+    font-size: 20px;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #b5e031;
+}
+
+.badge{
+    background-color: #b5e031;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.fa-check-circle{
+    color: green;
+}
+
+.followup .text{
+    font-size: 20px;
+}
+
+.sidemenu .form{
+    padding: 10% 15%;
+}
+
+.profile{
+    padding: 5% 15%;
+}
+
+.profile .name{
+    font-weight: 30px;
+    font-size: 25px;
 }
