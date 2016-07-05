@@ -133,7 +133,7 @@ main.main{
 
 .main__content .backdrop{
     padding: 20% 10%;
-    background-image: url('../static/img/home-backdrop.jpeg');
+    background-image: url('../mh4a-static/img/home-backdrop.jpeg');
     background-size: cover;
 }
 
