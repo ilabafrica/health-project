@@ -36,8 +36,8 @@ body {
 
 .sidemenu .sidemenu__menu li{
     text-align: center;
-    height: 120px;
-    padding: 44.5px;
+    height: 18%;
+    padding: 12.5%;
     border-bottom: 1px solid #f9f9f9;
     border-right: 1px solid #f9f9f9;
 
@@ -133,7 +133,7 @@ main.main{
 
 .main__content .backdrop{
     padding: 20% 10%;
-    background-image: url('../mh4a-static/img/home-backdrop.jpeg');
+    background-image: url('img/home-backdrop.jpeg');
     background-size: cover;
 }
 

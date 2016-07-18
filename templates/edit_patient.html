@@ -1,7 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="/mh4a-static/main.css">
+        <link rel="stylesheet" type="text/css" href="../static/main.css">
         <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
         <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900' rel='stylesheet' type='text/css'>
         <script type="text/javascript" src="//code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -28,7 +28,7 @@
                                     <i class="fa fa-users"></i>
                                 </div>
                                 <div class="text">
-                                    CHOWs
+                                    HEALTHCARE PROFESSIONALS
                                 </div>
                             </a>
                         </li>
@@ -252,27 +252,82 @@
                                 </div>
                                 <div role="tabpanel" class="tab-pane active" id="edit-nomonde-khoza">
                                     <div class="row">
-                                        <div class="form-holder col-md-6">
+                                        <div class="form-holder">
                                             <form class="form">
-                                                <div class="form-group">
-                                                    <label>Unique identifier</label>
-                                                    <input class="form-control" value="2099838826" placeholder="e.g: id/27446005">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Unique identifier</label>
+                                                        <input class="form-control" value="20998386" placeholder="e.g: 2422727">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>ID No:</label>
+                                                        <input class="form-control" value="4353353" placeholder="e.g: 22334438">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>First Name:</label>
+                                                        <input class="form-control" value="Cindy" placeholder="e.g: John">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Surname:</label>
+                                                        <input class="form-control" value="Anyango" placeholder="e.g: Lugano">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Date of Screen:</label>
+                                                        <input class="form-control" value="Cindy" placeholder="e.g: 2016-03-30">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Gender:</label>
+                                                        <label><input name="gender" type="radio"> Male</label>
+                                                        <label><input name="gender" type="radio"> Female</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>GPS Latitude:</label>
+                                                        <input class="form-control" value="S11,2328" placeholder="e.g: S11,2328">
+                                                    </div>
                                                 </div>
-                                                <div class="form-group">
-                                                    <label>First Name:</label>
-                                                    <input class="form-control" value="Cindy" placeholder="e.g: John">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>Surname:</label>
-                                                    <input class="form-control" value="Anyango" placeholder="e.g: Lugano">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label><input type="checkbox" checked="checked"> Screened</label>
-                                                </div>
-                                                <div class="form-group pull-right">
-                                                    <a href="view_patient.html" class="btn btn-primary">
-                                                        Submit
-                                                    </a>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Clinic Attended</label>
+                                                        <select class="form-control">
+                                                            <option>Clinic A</option>
+                                                            <option>Clinic B</option>
+                                                            <option>Clinic C</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Date of Birth:</label>
+                                                        <input class="form-control" value="2016-04-06" placeholder="e.g: 2016-04-30">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Attending School:</label>
+                                                        <label><input name="attending-school" type="radio"> Yes</label>
+                                                        <label><input name="attending-school" type="radio"> No</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Name of School:</label>
+                                                        <input class="form-control" value="N/B" placeholder="e.g: JulJan Academy">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Grade:</label>
+                                                        <select class="form-control">
+                                                            <option>Grade A</option>
+                                                            <option>Grade B</option>
+                                                            <option>Grade C</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Head of household:</label>
+                                                        <input class="form-control" value="N/B" placeholder="e.g: Josiah Khaminwa">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>GPS Longitude:</label>
+                                                        <input class="form-control" value="S11,2328" placeholder="e.g: S11,2328">
+                                                    </div>
+                                                    <div class="form-group pull-right">
+                                                        <a href="view_patient.html" class="btn btn-primary">
+                                                            Submit
+                                                        </a>
+                                                    </div>
                                                 </div>
                                             </form>
                                         </div>
