@@ -132,9 +132,8 @@ main.main{
 }
 
 .main__content .backdrop{
-    padding: 20% 10%;
-    background-image: url('img/home-backdrop.jpeg');
-    background-size: cover;
+    padding: 18.85% 10% 30%;
+    background-color: #dcdcdc;
 }
 
 .main__content .backdrop h1{
@@ -221,4 +220,7 @@ main.main{
 .profile .name{
     font-weight: 30px;
     font-size: 25px;
+}
+.profile-setup{
+    margin-top: -10%;
 }
