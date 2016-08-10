@@ -33,7 +33,9 @@
             </intent-filter>
         </activity>
         <!-- Main activity -->
-        <activity android:name=".LandingActivity"></activity>
+        <activity android:name=".LandingActivity" />
+        <activity android:name=".CustomAdapter" />
+        <activity android:name=".SigninActivity"></activity>
     </application>
 
 </manifest>
