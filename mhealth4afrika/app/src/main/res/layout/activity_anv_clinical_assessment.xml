@@ -2,1107 +2,1160 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
+
             <RelativeLayout
                 android:id="@+id/leftPane"
-                android:paddingRight="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:paddingRight="15dp">
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <LinearLayout
                         android:id="@+id/allergy"
-                        android:orientation="vertical"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Genr"/>
+                            android:text="Genr" />
 
                         <RadioGroup
                             android:id="@+id/allergyChoices"
                             android:layout_width="match_parent"
-                            android:layout_marginTop="10dp"
                             android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
 
                             <RadioButton
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="YES"
                                 android:id="@+id/radioButton"
-                                android:layout_weight=".35" />
-
-                            <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="NO"
+                                android:layout_weight=".35"
+                                android:text="YES" />
+
+                            <RadioButton
                                 android:id="@+id/radioButton2"
-                                android:layout_weight=".35" />
-
-                            <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="UNKNOWN"
+                                android:layout_weight=".35"
+                                android:text="NO" />
+
+                            <RadioButton
                                 android:id="@+id/radioButton3"
-                                android:layout_weight="1" />
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="UNKNOWN" />
                         </RadioGroup>
 
                         <EditText
-                            android:inputType="textMultiLine"
-                            android:lines="5"
                             android:id="@+id/knownAllergiesText"
-                            android:minLines="5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/allergyChoices"
                             android:layout_marginTop="10dp"
                             android:gravity="top|left"
-                            android:maxLines="7"
                             android:hint="Known Allergies"
-                            android:layout_height="wrap_content"
-                            android:layout_width="fill_parent"
-                            android:layout_below="@id/allergyChoices"
+                            android:inputType="textMultiLine"
+                            android:lines="5"
+                            android:maxLines="7"
+                            android:minLines="5"
                             android:scrollbars="vertical" />
 
                         <EditText
+                            android:id="@+id/commentsText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/commentsText"
+                            android:layout_marginTop="10dp"
+                            android:gravity="top|left"
+                            android:hint="Comments"
                             android:inputType="textMultiLine"
                             android:lines="5"
-                            android:id="@+id/commentsText"
-                            android:minLines="5"
-                            android:gravity="top|left"
                             android:maxLines="7"
-                            android:layout_marginTop="10dp"
-                            android:hint="Comments"
-                            android:layout_height="wrap_content"
-                            android:layout_width="fill_parent"
-                            android:layout_below="@id/commentsText"
+                            android:minLines="5"
                             android:scrollbars="vertical" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:orientation="vertical"
                         android:id="@+id/heartDiseases"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_below="@id/allergy"
                         android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textColor="#000"
                             android:layout_marginBottom="5dp"
-                            android:text="Pre-pregnancy: Family &amp; Genetic Conditions"/>
+                            android:text="Pre-pregnancy: Family &amp; Genetic Conditions"
+                            android:textColor="#000" />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Heart Diseases"/>
+                            android:text="Heart Diseases" />
 
                         <RadioGroup
                             android:id="@+id/heartDiseaseChoices"
                             android:layout_width="match_parent"
-                            android:layout_marginTop="10dp"
                             android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="YES"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="YES" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="NO"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="NO" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="UNKNOWN"
-                                android:layout_weight="1" />
+                                android:layout_weight="1"
+                                android:text="UNKNOWN" />
                         </RadioGroup>
 
                         <EditText
-                            android:inputType="text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/allergyChoices"
                             android:layout_marginTop="10dp"
                             android:gravity="top|left"
-                            android:maxLines="7"
                             android:hint="Degree of Relative"
-                            android:layout_height="wrap_content"
-                            android:layout_width="fill_parent"
-                            android:layout_below="@id/allergyChoices"/>
+                            android:inputType="text"
+                            android:maxLines="7" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:orientation="vertical"
                         android:id="@+id/hypertension"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_below="@id/heartDiseases"
                         android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Hypertension"/>
+                            android:text="Hypertension" />
 
                         <RadioGroup
                             android:layout_width="match_parent"
-                            android:layout_marginTop="10dp"
                             android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="YES"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="YES" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="NO"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="NO" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="UNKNOWN"
-                                android:layout_weight="1" />
+                                android:layout_weight="1"
+                                android:text="UNKNOWN" />
                         </RadioGroup>
 
                         <EditText
-                            android:inputType="text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/allergyChoices"
                             android:layout_marginTop="10dp"
                             android:gravity="top|left"
-                            android:maxLines="7"
                             android:hint="Degree of Relative"
-                            android:layout_height="wrap_content"
-                            android:layout_width="fill_parent"
-                            android:layout_below="@id/allergyChoices"/>
+                            android:inputType="text"
+                            android:maxLines="7" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:orientation="vertical"
                         android:id="@+id/diabetic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_below="@id/hypertension"
                         android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Diabetic"/>
+                            android:text="Diabetic" />
 
                         <RadioGroup
                             android:layout_width="match_parent"
-                            android:layout_marginTop="10dp"
                             android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="YES"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="YES" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="NO"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="NO" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="UNKNOWN"
-                                android:layout_weight="1" />
+                                android:layout_weight="1"
+                                android:text="UNKNOWN" />
                         </RadioGroup>
 
                         <EditText
-                            android:inputType="text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/allergyChoices"
                             android:layout_marginTop="10dp"
                             android:gravity="top|left"
-                            android:maxLines="7"
                             android:hint="Degree of Relative"
-                            android:layout_height="wrap_content"
-                            android:layout_width="fill_parent"
-                            android:layout_below="@id/allergyChoices"/>
+                            android:inputType="text"
+                            android:maxLines="7" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:orientation="vertical"
                         android:id="@+id/epileptic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_below="@id/diabetic"
                         android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Diabetic"/>
+                            android:text="Diabetic" />
 
                         <RadioGroup
                             android:layout_width="match_parent"
-                            android:layout_marginTop="10dp"
                             android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="YES"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="YES" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="NO"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="NO" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="UNKNOWN"
-                                android:layout_weight="1" />
+                                android:layout_weight="1"
+                                android:text="UNKNOWN" />
                         </RadioGroup>
 
                         <EditText
-                            android:inputType="text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/allergyChoices"
                             android:layout_marginTop="10dp"
                             android:gravity="top|left"
-                            android:maxLines="7"
                             android:hint="Degree of Relative"
-                            android:layout_height="wrap_content"
-                            android:layout_width="fill_parent"
-                            android:layout_below="@id/allergyChoices"/>
+                            android:inputType="text"
+                            android:maxLines="7" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:orientation="vertical"
                         android:id="@+id/renalDisease"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_below="@id/epileptic"
                         android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Renal disease"/>
+                            android:text="Renal disease" />
 
                         <RadioGroup
                             android:layout_width="match_parent"
-                            android:layout_marginTop="10dp"
                             android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="YES"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="YES" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="NO"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="NO" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="UNKNOWN"
-                                android:layout_weight="1" />
+                                android:layout_weight="1"
+                                android:text="UNKNOWN" />
                         </RadioGroup>
 
                         <EditText
-                            android:inputType="text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/allergyChoices"
                             android:layout_marginTop="10dp"
                             android:gravity="top|left"
-                            android:maxLines="7"
                             android:hint="Degree of Relative"
-                            android:layout_height="wrap_content"
-                            android:layout_width="fill_parent"
-                            android:layout_below="@id/allergyChoices"/>
+                            android:inputType="text"
+                            android:maxLines="7" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:orientation="vertical"
                         android:id="@+id/mentalIllness"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_below="@id/renalDisease"
                         android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Renal disease"/>
+                            android:text="Renal disease" />
 
                         <RadioGroup
                             android:layout_width="match_parent"
-                            android:layout_marginTop="10dp"
                             android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="YES"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="YES" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="NO"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="NO" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="UNKNOWN"
-                                android:layout_weight="1" />
+                                android:layout_weight="1"
+                                android:text="UNKNOWN" />
                         </RadioGroup>
 
                         <EditText
-                            android:inputType="text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/allergyChoices"
                             android:layout_marginTop="10dp"
                             android:gravity="top|left"
-                            android:maxLines="7"
                             android:hint="Degree of Relative"
-                            android:layout_height="wrap_content"
-                            android:layout_width="fill_parent"
-                            android:layout_below="@id/allergyChoices"/>
+                            android:inputType="text"
+                            android:maxLines="7" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:orientation="vertical"
                         android:id="@+id/disability"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_below="@id/mentalIllness"
                         android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Renal disease"/>
+                            android:text="Renal disease" />
 
                         <RadioGroup
                             android:layout_width="match_parent"
-                            android:layout_marginTop="10dp"
                             android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="YES"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="YES" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="NO"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="NO" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="UNKNOWN"
-                                android:layout_weight="1" />
+                                android:layout_weight="1"
+                                android:text="UNKNOWN" />
                         </RadioGroup>
 
                         <EditText
-                            android:inputType="text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/allergyChoices"
                             android:layout_marginTop="10dp"
                             android:gravity="top|left"
-                            android:maxLines="7"
                             android:hint="Degree of Relative"
-                            android:layout_height="wrap_content"
-                            android:layout_width="fill_parent"
-                            android:layout_below="@id/allergyChoices"/>
+                            android:inputType="text"
+                            android:maxLines="7" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:orientation="vertical"
                         android:id="@+id/metabolismDisorder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_below="@id/disability"
                         android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Renal disease"/>
+                            android:text="Renal disease" />
 
                         <RadioGroup
                             android:layout_width="match_parent"
-                            android:layout_marginTop="10dp"
                             android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="YES"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="YES" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="NO"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="NO" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="UNKNOWN"
-                                android:layout_weight="1" />
+                                android:layout_weight="1"
+                                android:text="UNKNOWN" />
                         </RadioGroup>
 
                         <EditText
-                            android:inputType="text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/allergyChoices"
                             android:layout_marginTop="10dp"
                             android:gravity="top|left"
-                            android:maxLines="7"
                             android:hint="Degree of Relative"
-                            android:layout_height="wrap_content"
-                            android:layout_width="fill_parent"
-                            android:layout_below="@id/allergyChoices"/>
+                            android:inputType="text"
+                            android:maxLines="7" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:orientation="vertical"
                         android:id="@+id/congenitalArbnormality"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_below="@id/metabolismDisorder"
                         android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Renal disease"/>
+                            android:text="Renal disease" />
 
                         <RadioGroup
                             android:layout_width="match_parent"
-                            android:layout_marginTop="10dp"
                             android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="YES"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="YES" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="NO"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="NO" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="UNKNOWN"
-                                android:layout_weight="1" />
+                                android:layout_weight="1"
+                                android:text="UNKNOWN" />
                         </RadioGroup>
 
                         <EditText
-                            android:inputType="text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/allergyChoices"
                             android:layout_marginTop="10dp"
                             android:gravity="top|left"
-                            android:maxLines="7"
                             android:hint="Degree of Relative"
-                            android:layout_height="wrap_content"
-                            android:layout_width="fill_parent"
-                            android:layout_below="@id/allergyChoices"/>
+                            android:inputType="text"
+                            android:maxLines="7" />
                     </LinearLayout>
+
                     <EditText
-                        android:inputType="textMultiLine"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/congenitalArbnormality"
                         android:layout_marginTop="10dp"
                         android:gravity="top|left"
-                        android:maxLines="7"
                         android:hint="Comments"
-                        android:layout_below="@id/congenitalArbnormality"
-                        android:layout_height="wrap_content"
-                        android:layout_width="fill_parent"/>
+                        android:inputType="textMultiLine"
+                        android:maxLines="7" />
                 </RelativeLayout>
             </RelativeLayout>
+
             <RelativeLayout
                 android:id="@+id/rightPane"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingLeft="15dp"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:paddingLeft="15dp">
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <LinearLayout
-                        android:orientation="vertical"
                         android:id="@+id/chronicHypertension"
-                        android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textColor="#000"
                             android:layout_marginBottom="5dp"
-                            android:text="Pre-pregnancy: Pre-existing Medical Conditions"/>
+                            android:text="Pre-pregnancy: Pre-existing Medical Conditions"
+                            android:textColor="#000" />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Chronic Hypertension"/>
+                            android:text="Chronic Hypertension" />
 
                         <RadioGroup
                             android:layout_width="match_parent"
-                            android:layout_marginTop="10dp"
                             android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="YES"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="YES" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="NO"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="NO" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="UNKNOWN"
-                                android:layout_weight="1" />
+                                android:layout_weight="1"
+                                android:text="UNKNOWN" />
                         </RadioGroup>
 
                         <EditText
-                            android:inputType="text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/allergyChoices"
                             android:layout_marginTop="10dp"
                             android:gravity="top|left"
-                            android:maxLines="7"
                             android:hint="Degree of Relative"
-                            android:layout_height="wrap_content"
-                            android:layout_width="fill_parent"
-                            android:layout_below="@id/allergyChoices"/>
+                            android:inputType="text"
+                            android:maxLines="7" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:orientation="vertical"
                         android:id="@+id/autoImmuneDisease"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_below="@id/chronicHypertension"
                         android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Treatment"/>
+                            android:text="Treatment" />
 
                         <RadioGroup
                             android:layout_width="match_parent"
-                            android:layout_marginTop="10dp"
                             android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="YES"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="YES" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="NO"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="NO" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="UNKNOWN"
-                                android:layout_weight="1" />
+                                android:layout_weight="1"
+                                android:text="UNKNOWN" />
                         </RadioGroup>
 
                         <EditText
-                            android:inputType="text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/allergyChoices"
                             android:layout_marginTop="10dp"
                             android:gravity="top|left"
-                            android:maxLines="7"
                             android:hint="Degree of Relative"
-                            android:layout_height="wrap_content"
-                            android:layout_width="fill_parent"
-                            android:layout_below="@id/allergyChoices"/>
+                            android:inputType="text"
+                            android:maxLines="7" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:orientation="vertical"
                         android:id="@+id/diabetes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_below="@id/autoImmuneDisease"
                         android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Diabetic"/>
+                            android:text="Diabetic" />
 
                         <RadioGroup
                             android:layout_width="match_parent"
-                            android:layout_marginTop="10dp"
                             android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="YES"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="YES" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="NO"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="NO" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="UNKNOWN"
-                                android:layout_weight="1" />
+                                android:layout_weight="1"
+                                android:text="UNKNOWN" />
                         </RadioGroup>
 
                         <EditText
-                            android:inputType="text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/allergyChoices"
                             android:layout_marginTop="10dp"
                             android:gravity="top|left"
-                            android:maxLines="7"
                             android:hint="Degree of Relative"
-                            android:layout_height="wrap_content"
-                            android:layout_width="fill_parent"
-                            android:layout_below="@id/allergyChoices"/>
+                            android:inputType="text"
+                            android:maxLines="7" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:orientation="vertical"
                         android:id="@+id/diabetesTreatment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_below="@id/diabetes"
                         android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Diabetic"/>
+                            android:text="Diabetic" />
 
                         <RadioGroup
                             android:layout_width="match_parent"
-                            android:layout_marginTop="10dp"
                             android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="YES"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="YES" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="NO"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="NO" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="UNKNOWN"
-                                android:layout_weight="1" />
+                                android:layout_weight="1"
+                                android:text="UNKNOWN" />
                         </RadioGroup>
 
                         <EditText
-                            android:inputType="text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/allergyChoices"
                             android:layout_marginTop="10dp"
                             android:gravity="top|left"
-                            android:maxLines="7"
                             android:hint="Degree of Relative"
-                            android:layout_height="wrap_content"
-                            android:layout_width="fill_parent"
-                            android:layout_below="@id/allergyChoices"/>
+                            android:inputType="text"
+                            android:maxLines="7" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:orientation="vertical"
                         android:id="@+id/hiv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_below="@id/diabetesTreatment"
                         android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Renal disease"/>
+                            android:text="Renal disease" />
 
                         <RadioGroup
                             android:layout_width="match_parent"
-                            android:layout_marginTop="10dp"
                             android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="YES"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="YES" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="NO"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="NO" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="UNKNOWN"
-                                android:layout_weight="1" />
+                                android:layout_weight="1"
+                                android:text="UNKNOWN" />
                         </RadioGroup>
 
                         <EditText
-                            android:inputType="text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/allergyChoices"
                             android:layout_marginTop="10dp"
                             android:gravity="top|left"
-                            android:maxLines="7"
                             android:hint="Degree of Relative"
-                            android:layout_height="wrap_content"
-                            android:layout_width="fill_parent"
-                            android:layout_below="@id/allergyChoices"/>
+                            android:inputType="text"
+                            android:maxLines="7" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:orientation="vertical"
                         android:id="@+id/cd4Count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_below="@id/hiv"
                         android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Renal disease"/>
+                            android:text="Renal disease" />
 
                         <RadioGroup
                             android:layout_width="match_parent"
-                            android:layout_marginTop="10dp"
                             android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="YES"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="YES" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="NO"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="NO" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="UNKNOWN"
-                                android:layout_weight="1" />
+                                android:layout_weight="1"
+                                android:text="UNKNOWN" />
                         </RadioGroup>
 
                         <EditText
-                            android:inputType="text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/allergyChoices"
                             android:layout_marginTop="10dp"
                             android:gravity="top|left"
-                            android:maxLines="7"
                             android:hint="Degree of Relative"
-                            android:layout_height="wrap_content"
-                            android:layout_width="fill_parent"
-                            android:layout_below="@id/allergyChoices"/>
+                            android:inputType="text"
+                            android:maxLines="7" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:orientation="vertical"
                         android:id="@+id/arvTreatment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_below="@id/cd4Count"
                         android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Renal disease"/>
+                            android:text="Renal disease" />
 
                         <RadioGroup
                             android:layout_width="match_parent"
-                            android:layout_marginTop="10dp"
                             android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="YES"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="YES" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="NO"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="NO" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="UNKNOWN"
-                                android:layout_weight="1" />
+                                android:layout_weight="1"
+                                android:text="UNKNOWN" />
                         </RadioGroup>
 
                         <EditText
-                            android:inputType="text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/allergyChoices"
                             android:layout_marginTop="10dp"
                             android:gravity="top|left"
-                            android:maxLines="7"
                             android:hint="Degree of Relative"
-                            android:layout_height="wrap_content"
-                            android:layout_width="fill_parent"
-                            android:layout_below="@id/allergyChoices"/>
+                            android:inputType="text"
+                            android:maxLines="7" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:orientation="vertical"
                         android:id="@+id/renalDiseasePreexisting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_below="@id/arvTreatment"
                         android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Renal disease"/>
+                            android:text="Renal disease" />
 
                         <RadioGroup
                             android:layout_width="match_parent"
-                            android:layout_marginTop="10dp"
                             android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="YES"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="YES" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="NO"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="NO" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="UNKNOWN"
-                                android:layout_weight="1" />
+                                android:layout_weight="1"
+                                android:text="UNKNOWN" />
                         </RadioGroup>
 
                         <EditText
-                            android:inputType="text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/allergyChoices"
                             android:layout_marginTop="10dp"
                             android:gravity="top|left"
-                            android:maxLines="7"
                             android:hint="Degree of Relative"
-                            android:layout_height="wrap_content"
-                            android:layout_width="fill_parent"
-                            android:layout_below="@id/allergyChoices"/>
+                            android:inputType="text"
+                            android:maxLines="7" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:orientation="vertical"
                         android:id="@+id/tuberculosis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_below="@id/renalDiseasePreexisting"
                         android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Renal disease"/>
+                            android:text="Renal disease" />
 
                         <RadioGroup
                             android:layout_width="match_parent"
-                            android:layout_marginTop="10dp"
                             android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="YES"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="YES" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="NO"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="NO" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="UNKNOWN"
-                                android:layout_weight="1" />
+                                android:layout_weight="1"
+                                android:text="UNKNOWN" />
                         </RadioGroup>
 
                         <EditText
-                            android:inputType="text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/allergyChoices"
                             android:layout_marginTop="10dp"
                             android:gravity="top|left"
-                            android:maxLines="7"
                             android:hint="Degree of Relative"
-                            android:layout_height="wrap_content"
-                            android:layout_width="fill_parent"
-                            android:layout_below="@id/allergyChoices"/>
+                            android:inputType="text"
+                            android:maxLines="7" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:orientation="vertical"
                         android:id="@+id/otherChronicConditions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_below="@id/tuberculosis"
                         android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Renal disease"/>
+                            android:text="Renal disease" />
 
                         <RadioGroup
                             android:layout_width="match_parent"
-                            android:layout_marginTop="10dp"
                             android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="YES"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="YES" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="NO"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="NO" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="UNKNOWN"
-                                android:layout_weight="1" />
+                                android:layout_weight="1"
+                                android:text="UNKNOWN" />
                         </RadioGroup>
 
                         <EditText
-                            android:inputType="text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/allergyChoices"
                             android:layout_marginTop="10dp"
                             android:gravity="top|left"
-                            android:maxLines="7"
                             android:hint="Degree of Relative"
-                            android:layout_height="wrap_content"
-                            android:layout_width="fill_parent"
-                            android:layout_below="@id/allergyChoices"/>
+                            android:inputType="text"
+                            android:maxLines="7" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:orientation="vertical"
                         android:id="@+id/surgeries"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_below="@id/otherChronicConditions"
                         android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Renal disease"/>
+                            android:text="Renal disease" />
 
                         <RadioGroup
                             android:layout_width="match_parent"
-                            android:layout_marginTop="10dp"
                             android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="YES"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="YES" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="NO"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="NO" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="UNKNOWN"
-                                android:layout_weight="1" />
+                                android:layout_weight="1"
+                                android:text="UNKNOWN" />
                         </RadioGroup>
 
                         <EditText
-                            android:inputType="text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/allergyChoices"
                             android:layout_marginTop="10dp"
                             android:gravity="top|left"
-                            android:maxLines="7"
                             android:hint="Degree of Relative"
-                            android:layout_height="wrap_content"
-                            android:layout_width="fill_parent"
-                            android:layout_below="@id/allergyChoices"/>
+                            android:inputType="text"
+                            android:maxLines="7" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:orientation="vertical"
                         android:id="@+id/treatmentMedication"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_below="@id/surgeries"
                         android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Renal disease"/>
+                            android:text="Renal disease" />
 
                         <RadioGroup
                             android:layout_width="match_parent"
-                            android:layout_marginTop="10dp"
                             android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="YES"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="YES" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="NO"
-                                android:layout_weight=".35" />
+                                android:layout_weight=".35"
+                                android:text="NO" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="UNKNOWN"
-                                android:layout_weight="1" />
+                                android:layout_weight="1"
+                                android:text="UNKNOWN" />
                         </RadioGroup>
 
                         <EditText
-                            android:inputType="text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/allergyChoices"
                             android:layout_marginTop="10dp"
                             android:gravity="top|left"
-                            android:maxLines="7"
                             android:hint="Degree of Relative"
-                            android:layout_height="wrap_content"
-                            android:layout_width="fill_parent"
-                            android:layout_below="@id/allergyChoices"/>
+                            android:inputType="text"
+                            android:maxLines="7" />
                     </LinearLayout>
                 </RelativeLayout>
             </RelativeLayout>

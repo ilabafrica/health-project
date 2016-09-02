@@ -18,7 +18,6 @@
     </intent-filter>
 
 
-
     <application
         android:allowBackup="true"
         android:hardwareAccelerated="true"
@@ -26,17 +25,63 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
 
-        <!-- Main activity -->
-        <activity android:name=".LandingActivity" />
-        <activity android:name=".CustomAdapter" />
-        <activity android:name=".anv1_patient_registration" />
 
-        <activity android:name=".ANVRegistration" android:label="@string/app_name">
+        <activity
+            android:name=".activities.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:configChanges="orientation|screenSize|keyboard"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:configChanges="orientation|screenSize|keyboard"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".activities.HelpActivity"
+            android:configChanges="orientation|screenSize|keyboard"
+            android:label="@string/action_help" />
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:configChanges="orientation|screenSize|keyboard"
+            android:label="@string/action_settings" />
+        <activity
+            android:name=".activities.LanguageSettings"
+            android:configChanges="orientation|screenSize|keyboard"
+            android:label="@string/language" />
+        <activity
+            android:name=".activities.HealthFacilityActivity"
+            android:configChanges="orientation|screenSize|keyboard"
+            android:label="@string/health_facilities" />
+        <activity
+            android:name=".activities.ANVRegistrationActivity"
+            android:configChanges="orientation|screenSize|keyboard"
+            android:label="@string/anc_visits" />
+        <activity
+            android:name=".activities.PatientsActivity"
+            android:configChanges="orientation|screenSize|keyboard"
+            android:label="@string/patients" />
+        <activity
+            android:name=".activities.ForgotPasswordActivity"
+            android:configChanges="orientation|screenSize|keyboard"
+            android:label="@string/forgot_password" />
+        <activity
+            android:name=".activities.SetupActivity"
+            android:configChanges="orientation|screenSize|keyboard"
+            android:label="@string/set_up" />
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:configChanges="orientation|screenSize|keyboard"
+            android:label="@string/profile" />
+
+
     </application>
 
 </manifest>

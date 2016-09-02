@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="rela" type="id">false</item>
+    <item name="txt_title" type="id">false</item>
+    <item name="layout_progress" type="id">false</item>
+    <item name="spinner" type="id">false</item>
+    <item name="txt_progress" type="id">false</item>
+
+</resources>
