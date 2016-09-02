@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/leftPane"
+            android:paddingRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Tobacco"
+                        android:id="@+id/textView8"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Does patient smoke?"
+                        android:id="@+id/textView9"
+                        android:layout_below="@+id/textView8"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="YES"
+                        android:id="@+id/radioButton4"
+                        android:layout_below="@+id/textView9"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:checked="false" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NO"
+                        android:id="@+id/radioButton5"
+                        android:layout_below="@+id/textView9"
+                        android:layout_toRightOf="@+id/textView8"
+                        android:layout_toEndOf="@+id/textView8"
+                        android:checked="false"
+                        android:layout_marginLeft="10dp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="At risk?"
+                        android:id="@+id/checkBox2"
+                        android:layout_below="@+id/radioButton4"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:checked="false" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Follow up?"
+                        android:id="@+id/checkBox3"
+                        android:checked="false"
+                        android:layout_below="@+id/checkBox2"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="date"
+                        android:ems="10"
+                        android:id="@+id/editText7"
+                        android:layout_alignTop="@+id/checkBox3"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toRightOf="@+id/radioButton5"
+                        android:layout_toEndOf="@+id/radioButton5"
+                        android:hint="Follow-up date"
+                        android:textSize="13dp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cessation counselling provided?"
+                        android:id="@+id/checkBox4"
+                        android:checked="false"
+                        android:layout_below="@+id/checkBox3"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Drug Abuse"
+                        android:id="@+id/textView10"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Abuses Alcohol, drugs or other substances?"
+                        android:id="@+id/textView11"
+                        android:layout_below="@+id/textView10"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textSize="12dp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="YES"
+                        android:id="@+id/radioButton6"
+                        android:checked="false"
+                        android:layout_below="@+id/textView11"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textSize="12dp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NO"
+                        android:id="@+id/radioButton7"
+                        android:checked="false"
+                        android:layout_below="@+id/textView11"
+                        android:layout_toRightOf="@+id/radioButton6"
+                        android:layout_toEndOf="@+id/radioButton6"
+                        android:textSize="12dp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REFUSED TO ANSWER"
+                        android:id="@+id/radioButton8"
+                        android:checked="false"
+                        android:layout_below="@+id/textView11"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toRightOf="@+id/radioButton7"
+                        android:layout_toEndOf="@+id/radioButton7"
+                        android:textSize="12dp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="At risk?"
+                        android:id="@+id/checkBox5"
+                        android:checked="false"
+                        android:layout_below="@+id/radioButton6"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Follow up?"
+                        android:id="@+id/checkBox6"
+                        android:checked="false"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/checkBox5"
+                        android:layout_alignParentLeft="true" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="date"
+                        android:ems="10"
+                        android:id="@+id/editText11"
+                        android:hint="Follow-up date"
+                        android:textSize="13dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_alignTop="@+id/checkBox6"
+                        android:layout_alignLeft="@+id/radioButton8"
+                        android:layout_alignStart="@+id/radioButton8"
+                        android:layout_alignRight="@+id/radioButton8"
+                        android:layout_alignEnd="@+id/radioButton8" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lifestyle Counselling Provided?"
+                        android:id="@+id/checkBox7"
+                        android:checked="false"
+                        android:layout_below="@+id/editText11"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:paddingBottom="0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Malaria"
+                        android:id="@+id/textView12"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Supplied with ITN"
+                        android:id="@+id/textView13"
+                        android:layout_alignParentStart="true"
+                        android:textSize="12dp"
+                        android:layout_below="@+id/textView12"
+                        android:layout_alignParentLeft="true" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="YES"
+                        android:id="@+id/radioButton9"
+                        android:checked="false"
+                        android:layout_alignParentStart="true"
+                        android:textSize="12dp"
+                        android:layout_below="@+id/textView13"
+                        android:layout_alignParentLeft="true" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NO"
+                        android:id="@+id/radioButton10"
+                        android:checked="false"
+                        android:textSize="12dp"
+                        android:layout_below="@+id/textView13"
+                        android:layout_toRightOf="@+id/radioButton9"
+                        android:layout_toEndOf="@+id/radioButton9" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Diabetes"
+                        android:id="@+id/textView14"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Does patient have diabetes?"
+                        android:id="@+id/textView15"
+                        android:layout_alignParentStart="true"
+                        android:textSize="12dp"
+                        android:layout_below="@+id/textView14"
+                        android:layout_alignParentLeft="true" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="YES"
+                        android:id="@+id/radioButton11"
+                        android:checked="false"
+                        android:layout_alignParentStart="true"
+                        android:textSize="12dp"
+                        android:layout_below="@+id/textView15"
+                        android:layout_alignParentLeft="true" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NO"
+                        android:id="@+id/radioButton12"
+                        android:checked="false"
+                        android:textSize="12dp"
+                        android:layout_above="@+id/checkBox8"
+                        android:layout_toRightOf="@+id/checkBox8"
+                        android:layout_toEndOf="@+id/checkBox8" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="At risk?"
+                        android:id="@+id/checkBox8"
+                        android:checked="false"
+                        android:layout_below="@+id/radioButton11"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Follow up?"
+                        android:id="@+id/checkBox9"
+                        android:checked="false"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/checkBox8"
+                        android:layout_alignParentLeft="true" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="date"
+                        android:ems="10"
+                        android:id="@+id/editText12"
+                        android:hint="Follow-up date"
+                        android:textSize="13dp"
+                        android:layout_alignTop="@+id/checkBox9"
+                        android:layout_toRightOf="@+id/textView18"
+                        android:layout_toEndOf="@+id/textView18" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="On Treatment?"
+                        android:id="@+id/textView16"
+                        android:textSize="12dp"
+                        android:layout_below="@+id/checkBox9"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="YES"
+                        android:id="@+id/radioButton13"
+                        android:checked="false"
+                        android:layout_alignParentStart="true"
+                        android:textSize="12dp"
+                        android:layout_below="@+id/textView16"
+                        android:layout_alignParentLeft="true" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NO"
+                        android:id="@+id/radioButton14"
+                        android:checked="false"
+                        android:textSize="12dp"
+                        android:layout_below="@+id/textView16"
+                        android:layout_toRightOf="@+id/checkBox8"
+                        android:layout_toEndOf="@+id/checkBox8" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Blood sugar test"
+                        android:id="@+id/textView17"
+                        android:textSize="12dp"
+                        android:layout_below="@+id/radioButton13"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText13"
+                        android:layout_below="@+id/textView17"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignRight="@+id/textView15"
+                        android:layout_alignEnd="@+id/textView15"
+                        android:hint="Date of Test"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText14"
+                        android:layout_alignTop="@+id/editText13"
+                        android:layout_toRightOf="@+id/editText13"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="14dp"
+                        android:hint="Test result" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Glucose Tolerance Test"
+                        android:id="@+id/textView18"
+                        android:textSize="12dp"
+                        android:layout_below="@+id/editText13"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="YES"
+                        android:id="@+id/radioButton15"
+                        android:checked="false"
+                        android:layout_alignParentStart="true"
+                        android:textSize="12dp"
+                        android:layout_below="@+id/textView18"
+                        android:layout_alignParentLeft="true" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NO"
+                        android:id="@+id/radioButton16"
+                        android:checked="false"
+                        android:textSize="12dp"
+                        android:layout_below="@+id/textView18"
+                        android:layout_toLeftOf="@+id/editText12"
+                        android:layout_toStartOf="@+id/editText12" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText15"
+                        android:hint="Date of Test"
+                        android:textSize="14dp"
+                        android:layout_below="@+id/radioButton15"
+                        android:layout_toLeftOf="@+id/editText16"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText16"
+                        android:textSize="14dp"
+                        android:hint="Test result"
+                        android:layout_alignTop="@+id/editText15"
+                        android:layout_toRightOf="@+id/editText13"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="YES"
+                        android:id="@+id/radioButton17"
+                        android:checked="false"
+                        android:textSize="12dp"
+                        android:layout_below="@+id/textView19"
+                        android:layout_alignRight="@+id/textView14"
+                        android:layout_alignEnd="@+id/textView14" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NO"
+                        android:id="@+id/radioButton18"
+                        android:checked="false"
+                        android:textSize="12dp"
+                        android:layout_below="@+id/textView19"
+                        android:layout_toLeftOf="@+id/editText12"
+                        android:layout_toStartOf="@+id/editText12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Referred"
+                        android:id="@+id/textView19"
+                        android:textSize="12dp"
+                        android:layout_below="@+id/editText15"
+                        android:layout_alignLeft="@+id/radioButton17"
+                        android:layout_alignStart="@+id/radioButton17" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText17"
+                        android:hint="Date of Test"
+                        android:textSize="14dp"
+                        android:layout_below="@+id/radioButton17"
+                        android:layout_alignLeft="@+id/radioButton17"
+                        android:layout_alignStart="@+id/radioButton17"
+                        android:layout_toLeftOf="@+id/editText16"
+                        android:layout_toStartOf="@+id/editText16" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText18"
+                        android:textSize="14dp"
+                        android:hint="Test result"
+                        android:layout_alignTop="@+id/editText17"
+                        android:layout_toRightOf="@+id/editText15"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Hypertension"
+                        android:id="@+id/textView20"
+                        android:textSize="12dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/editText19"
+                        android:layout_below="@+id/textView20"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textSize="14dp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="At risk?"
+                        android:id="@+id/checkBox10"
+                        android:checked="false"
+                        android:layout_below="@+id/editText19"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Follow up?"
+                        android:id="@+id/checkBox11"
+                        android:checked="false"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/checkBox10"
+                        android:layout_alignParentLeft="true" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="date"
+                        android:ems="10"
+                        android:id="@+id/editText20"
+                        android:hint="Follow-up date"
+                        android:textSize="13dp"
+                        android:layout_alignTop="@+id/checkBox11"
+                        android:layout_toRightOf="@+id/checkBox11"
+                        android:layout_marginLeft="43dp"
+                        android:layout_marginStart="43dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText21"
+                        android:layout_below="@+id/editText20"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:hint="Treatment"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rightPane"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Tuberculosis (TB) Screening "
+                    android:id="@+id/textView21"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Does patient have TB?"
+                    android:id="@+id/textView22"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView21"
+                    android:layout_alignParentLeft="true" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YES"
+                    android:id="@+id/radioButton19"
+                    android:layout_alignParentStart="true"
+                    android:checked="false"
+                    android:layout_below="@+id/textView22"
+                    android:layout_alignParentLeft="true" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NO"
+                    android:id="@+id/radioButton20"
+                    android:checked="false"
+                    android:layout_alignTop="@+id/radioButton19"
+                    android:layout_alignRight="@+id/textView22"
+                    android:layout_alignEnd="@+id/textView22" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Does someone in household have TB?"
+                    android:id="@+id/textView23"
+                    android:layout_below="@+id/radioButton19"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YES"
+                    android:id="@+id/radioButton21"
+                    android:layout_alignParentStart="true"
+                    android:checked="false"
+                    android:layout_below="@+id/textView23"
+                    android:layout_alignParentLeft="true" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NO"
+                    android:id="@+id/radioButton22"
+                    android:checked="false"
+                    android:layout_below="@+id/textView23"
+                    android:layout_alignLeft="@+id/radioButton20"
+                    android:layout_alignStart="@+id/radioButton20" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Follow up?"
+                    android:id="@+id/checkBox12"
+                    android:checked="false"
+                    android:layout_below="@+id/checkBox13"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:ems="10"
+                    android:id="@+id/editText22"
+                    android:hint="Follow-up date"
+                    android:textSize="13dp"
+                    android:layout_alignTop="@+id/checkBox12"
+                    android:layout_centerHorizontal="true" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="At risk?"
+                    android:id="@+id/checkBox13"
+                    android:checked="false"
+                    android:layout_below="@+id/radioButton21"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YES"
+                    android:id="@+id/radioButton23"
+                    android:checked="false"
+                    android:textSize="12dp"
+                    android:layout_below="@+id/textView24"
+                    android:layout_alignLeft="@+id/checkBox13"
+                    android:layout_alignStart="@+id/checkBox13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="On Treatment?"
+                    android:id="@+id/textView24"
+                    android:textSize="12dp"
+                    android:layout_below="@+id/editText22"
+                    android:layout_toLeftOf="@+id/radioButton22"
+                    android:layout_toStartOf="@+id/radioButton22" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NO"
+                    android:id="@+id/radioButton24"
+                    android:checked="false"
+                    android:textSize="12dp"
+                    android:layout_below="@+id/textView24"
+                    android:layout_alignLeft="@+id/radioButton22"
+                    android:layout_alignStart="@+id/radioButton22" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText23"
+                    android:hint="Treatment"
+                    android:textSize="14dp"
+                    android:layout_below="@+id/radioButton23"
+                    android:layout_alignLeft="@+id/textView24"
+                    android:layout_alignStart="@+id/textView24"
+                    android:layout_alignRight="@+id/textView21"
+                    android:layout_alignEnd="@+id/textView21" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText24"
+                    android:textSize="14dp"
+                    android:hint="Commencement Date"
+                    android:layout_below="@+id/radioButton24"
+                    android:layout_toRightOf="@+id/textView21"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
