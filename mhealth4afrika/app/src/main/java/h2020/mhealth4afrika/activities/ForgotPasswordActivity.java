@@ -68,6 +68,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
 
                         // Go to login activity
                         message = getResources().getString(R.string.successful_post_password);
+
                         intent = new Intent(context, LoginActivity.class);
                         intent.putExtra("message", message);
                         intent.putExtra("success", true);
