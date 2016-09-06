@@ -8,10 +8,30 @@
         android:minSdkVersion="15"
         android:targetSdkVersion="23" />
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- Use network/Internet permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Read Write Memory permissions -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <!-- Send SMS permissions -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <!-- Phone state permissions -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- Network state permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- LocationAccess permissions -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Google API access permissions -->
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
 
     <intent-filter>
         <action android:name="android.intent.action.SEARCH" />
@@ -80,7 +100,6 @@
             android:name=".activities.ProfileActivity"
             android:configChanges="orientation|screenSize|keyboard"
             android:label="@string/profile" />
-
 
     </application>
 
