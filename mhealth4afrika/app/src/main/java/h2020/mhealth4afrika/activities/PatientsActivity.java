@@ -19,19 +19,13 @@ public class PatientsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
 
-
+        setContentView(R.layout.activity_patient_list);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         getSupportActionBar().setHomeButtonEnabled(true);
 
         rootLayout = (CoordinatorLayout) findViewById(R.id.rootLayout);
-
-
         widgets = new WidgetHelper(context);
-
-
     }
 
 

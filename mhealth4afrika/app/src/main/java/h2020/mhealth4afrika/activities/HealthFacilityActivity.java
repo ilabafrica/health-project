@@ -20,7 +20,7 @@ public class HealthFacilityActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_health_facility_activity);
 
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

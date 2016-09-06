@@ -56,7 +56,7 @@
                     android:padding="3dp"
                     android:text="Name"
                     android:textAppearance="?android:attr/textAppearanceSmall" />
-                
+
             </TableRow>
         </TableLayout>
     </RelativeLayout>
