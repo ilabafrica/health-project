@@ -65,6 +65,10 @@
             android:configChanges="orientation|screenSize|keyboard"
             android:label="@string/app_name" />
         <activity
+            android:name=".activities.ANV1StepperActivity"
+            android:configChanges="orientation|screenSize|keyboard"
+            android:label="@string/anc_visits" />
+        <activity
             android:name=".activities.HelpActivity"
             android:configChanges="orientation|screenSize|keyboard"
             android:label="@string/action_help" />
@@ -80,10 +84,6 @@
             android:name=".activities.HealthFacilityActivity"
             android:configChanges="orientation|screenSize|keyboard"
             android:label="@string/health_facilities" />
-        <activity
-            android:name=".activities.ANVRegistrationActivity"
-            android:configChanges="orientation|screenSize|keyboard"
-            android:label="@string/anc_visits" />
         <activity
             android:name=".activities.PatientsActivity"
             android:configChanges="orientation|screenSize|keyboard"
