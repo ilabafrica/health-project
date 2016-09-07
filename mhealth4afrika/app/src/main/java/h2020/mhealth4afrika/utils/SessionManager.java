@@ -9,29 +9,24 @@ import h2020.mhealth4afrika.models.User;
 
 public class SessionManager {
 
+    // Shared pref mode
+    final static int PRIVATE_MODE = 0;
     // SharedPref file name
     private static final String APP_USER_AUTH = "AppUserAuth";
     private static final String REFERENCE_DATA_CACHE_STATUS = "ReferenceDataCacheStatus";
     private static final String DATA_CACHE_STATUS = "DataCacheStatus";
     private static final String LANGUAGE = "Language";
     private static final String SAVE_ON_DEVICE = "SaveOnDevice";
-
     private static SharedPreferences initSyncPref, credentialsPref, dataCachePref, languagePref,
             persistDataPref;
-
     private static Editor editor;
-
     private static String initLogin = "initLogin";
     private static String startStatus = "startStatus";
     private static String pauseStatus = "pauseStatus";
     private static String setupStatus = "setupStatus";
-
     private static String language_preference = "language_preference";
     private static String persistStatus = "persistStatus";
     private static String navMenuItemsStatus = "menuItemsStatus";
-
-    // Shared pref mode
-    final static int PRIVATE_MODE = 0;
 
     // Initialize our preferences
     public static void initAPPSharedPref(Context ctx) {
@@ -44,8 +39,6 @@ public class SessionManager {
         persistDataPref = ctx.getSharedPreferences(SAVE_ON_DEVICE, PRIVATE_MODE);
 
     }
-
-
 
 
     // Set this is first time login

@@ -9,6 +9,9 @@ public class AppConfig {
 
     private static String SCRIPTS_URL = "http://127.0.0.1/mhealth4Afrika/uploadscripts/";
     private static String SERVER_URL = "http://127.0.0.1/";
+    // SQLite DB
+    private static String APP_DB_NAME = "mhealth4Afrika.sqlite";
+    private static String tablesFile = "dbtables.txt";
 
     /**
      * @return the aPP_URL
@@ -24,10 +27,6 @@ public class AppConfig {
         APP_URL = aPP_URL;
     }
 
-    // SQLite DB
-    private static String APP_DB_NAME = "mhealth4Afrika.sqlite";
-    private static String tablesFile = "dbtables.txt";
-
     public static String getFile() {
         return tablesFile;
     }
@@ -36,17 +35,6 @@ public class AppConfig {
         AppConfig.tablesFile = file;
     }
 
-    public static void setPOST_URL(String pOST_URL) {
-        POST_URL = pOST_URL;
-    }
-
-    public static void setSERVER_URL(String sERVER_URL) {
-        SERVER_URL = sERVER_URL;
-    }
-
-    // Getters for static to handle for any changes after compilation of the
-    // class
-
     /**
      * @return the pOST_URL
      */
@@ -54,11 +42,22 @@ public class AppConfig {
         return POST_URL;
     }
 
+    public static void setPOST_URL(String pOST_URL) {
+        POST_URL = pOST_URL;
+    }
+
+    // Getters for static to handle for any changes after compilation of the
+    // class
+
     /**
      * @return the sERVER_URL
      */
     public static String getSERVER_URL() {
         return SERVER_URL;
+    }
+
+    public static void setSERVER_URL(String sERVER_URL) {
+        SERVER_URL = sERVER_URL;
     }
 
     /**

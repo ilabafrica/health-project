@@ -12,6 +12,7 @@
     <string name="action_settings">Settings</string>
     <string name="action_help">Help</string>
     <string name="action_logout">Logout</string>
+    <string name="action_go_back">Go Back</string>
     <!--Credentials-->
     <string name="btn_login">Login</string>
     <string name="btn_setup">Set Up</string>
@@ -64,11 +65,22 @@
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="sure_to_logout">Are you sure?</string>
+    <string name="sure_to_go_back">Are you sure?</string>
 
     <!--User-->
     <string name="profile">Profile</string>
     <string name="set_up">Set Up</string>
-    btn_setup
+
+
+    <!--Stepper activity-->
+    <string name="ms_prev">PREV</string>
+    <string name="ms_next">NEXT</string>
+    <string name="ms_end">COMPLETE</string>
+    <string name="ms_continue">CONTINUE</string>
+    <string name="ms_optional">Optional</string>
+    <string name="ms_text_step">Step $current of $total</string>
+
+
 
 
 </resources>

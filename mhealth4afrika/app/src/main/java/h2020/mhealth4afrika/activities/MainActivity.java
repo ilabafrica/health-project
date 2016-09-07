@@ -142,18 +142,14 @@ public class MainActivity extends AppCompatActivity implements OnGroupClickListe
         listDataChild = new HashMap<String, List<String>>();
 
         // Adding header data
-        listDataHeader.add(getResources().getString(R.string.app_name));
-        listDataHeader.add(getResources().getString(R.string.app_name));
-        listDataHeader.add(getResources().getString(R.string.app_name));
-        listDataHeader.add(getResources().getString(R.string.app_name));
+        listDataHeader.add(getResources().getString(R.string.profile));
+        listDataHeader.add(getResources().getString(R.string.set_up));
 
 
         // Adding child data
 
         listDataChild.put(listDataHeader.get(0), null);
         listDataChild.put(listDataHeader.get(1), null);
-        listDataChild.put(listDataHeader.get(2), null);
-        listDataChild.put(listDataHeader.get(3), null);
 
     }
 
@@ -241,14 +237,11 @@ public class MainActivity extends AppCompatActivity implements OnGroupClickListe
 
                     break;
                 case 1:
-                    intent = new Intent(getApplicationContext(), ProfileActivity.class);
+                    intent = new Intent(getApplicationContext(), SetupActivity.class);
                     startActivity(intent);
 
                     break;
-                case 2:
-                    intent = new Intent(getApplicationContext(), ProfileActivity.class);
-                    startActivity(intent);
-                    break;
+
 
             }
 

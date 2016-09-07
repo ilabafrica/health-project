@@ -1,6 +1,9 @@
 package h2020.mhealth4afrika.activities;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -20,17 +23,20 @@ public class ANV1StepperActivity extends TabStepper {
     private int i = 1;
     private Context context = ANV1StepperActivity.this;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         boolean linear = false;
 
         setErrorTimeout(1500);
         setLinear(linear);
-        setTitle("Antenatal Visit 1");
+        setTitle("Antenatal Visit");
         setAlternativeTab(false);
+        setStartPreviousButton();
+        setPreviousVisible();
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
+
 
 
         addStep(createFragment(new ANV1RegistrationStep()));
@@ -40,14 +46,64 @@ public class ANV1StepperActivity extends TabStepper {
         addStep(createFragment(new ANV1ScreeningStep()));
         addStep(createFragment(new ANV1ImmunizationsAndSupplementsStep()));
 
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        getSupportActionBar().setHomeButtonEnabled(true);
+
         super.onCreate(savedInstanceState);
+
+
     }
 
+
+    private AbstractStep createFragment(AbstractStep fragment) {
+        Bundle b = new Bundle();
+        b.putInt("position", i++);
+        fragment.setArguments(b);
+        return fragment;
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        // Prompt user to choose what they wish to do
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        builder.setTitle(context.getResources().getString(R.string.action_go_back));
+        builder.setMessage(context.getResources().getString(R.string.sure_to_go_back));
+
+        builder.setPositiveButton(context.getResources().getString(R.string.yes), new DialogInterface.OnClickListener() {
+
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+
+                // Move to Login Activity
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+
+                finish();
+            }
+        });
+
+        builder.setNegativeButton(context.getResources().getString(R.string.no), new DialogInterface.OnClickListener() {
+
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+
+        builder.create().show();
+
+
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.profile, menu);
+        getMenuInflater().inflate(R.menu.anc_visit, menu);
         return true;
     }
 
@@ -65,12 +121,8 @@ public class ANV1StepperActivity extends TabStepper {
         return super.onOptionsItemSelected(item);
     }
 
-    private AbstractStep createFragment(AbstractStep fragment) {
-        Bundle b = new Bundle();
-        b.putInt("position", i++);
-        fragment.setArguments(b);
-        return fragment;
-    }
+
+
 }
 
 
