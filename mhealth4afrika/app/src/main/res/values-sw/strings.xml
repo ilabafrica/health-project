@@ -70,6 +70,9 @@
     <!--User-->
     <string name="profile">Profile</string>
     <string name="set_up">Set Up</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+
 
     <!--Stepper activity-->
     <string name="ms_prev">PREV</string>
@@ -78,6 +81,7 @@
     <string name="ms_continue">CONTINUE</string>
     <string name="ms_optional">Optional</string>
     <string name="ms_text_step">Step $current of $total</string>
+    <string name="phone_number">Phone number</string>
 
 
 </resources>

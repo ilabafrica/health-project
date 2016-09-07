@@ -143,13 +143,12 @@ public class MainActivity extends AppCompatActivity implements OnGroupClickListe
 
         // Adding header data
         listDataHeader.add(getResources().getString(R.string.profile));
-        listDataHeader.add(getResources().getString(R.string.set_up));
 
 
         // Adding child data
 
         listDataChild.put(listDataHeader.get(0), null);
-        listDataChild.put(listDataHeader.get(1), null);
+
 
     }
 
@@ -233,11 +232,6 @@ public class MainActivity extends AppCompatActivity implements OnGroupClickListe
             switch (groupPosition) {
                 case 0:
                     intent = new Intent(getApplicationContext(), ProfileActivity.class);
-                    startActivity(intent);
-
-                    break;
-                case 1:
-                    intent = new Intent(getApplicationContext(), SetupActivity.class);
                     startActivity(intent);
 
                     break;

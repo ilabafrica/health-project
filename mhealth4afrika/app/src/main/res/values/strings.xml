@@ -23,6 +23,7 @@
     <string name="password">Password</string>
     <string name="btn_submit">Submit</string>
     <string name="email">Email</string>
+    <string name="phone_number">Phone number</string>
     <string name="forgot_password_promt">Kindly enter your username or email to reset your password</string>
     <string name="or">Or</string>
     <!-- Language Settings -->
@@ -70,6 +71,8 @@
     <!--User-->
     <string name="profile">Profile</string>
     <string name="set_up">Set Up</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
 
 
     <!--Stepper activity-->
