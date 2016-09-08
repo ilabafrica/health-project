@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity implements OnGroupClickListe
                 } else if (gridView.getItemAtPosition(position).equals(1)) {
 
 
-                    intent = new Intent(getApplicationContext(), ANV1StepperActivity.class);
+                    intent = new Intent(getApplicationContext(), ANV1StepsActivity.class);
                     startActivity(intent);
 
 

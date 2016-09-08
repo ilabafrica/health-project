@@ -45,7 +45,7 @@
             android:configChanges="orientation|screenSize|keyboard"
             android:label="@string/app_name" />
         <activity
-            android:name=".activities.ANV1StepperActivity"
+            android:name=".activities.ANV1StepsActivity"
             android:configChanges="orientation|screenSize|keyboard"
             android:label="@string/anc_visits" />
         <activity
