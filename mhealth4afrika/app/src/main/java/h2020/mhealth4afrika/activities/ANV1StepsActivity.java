@@ -1,6 +1,9 @@
 package h2020.mhealth4afrika.activities;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -23,12 +26,10 @@ public class ANV1StepsActivity extends BaseStepperActivity {
 
         setErrorTimeout(1500);
         setLinear(linear);
-        setTitle("Antenatal Visit 1");
+        setTitle("Antenatal Visit");
         setAlternativeTab(false);
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
-
+        setStartPreviousButton();
+        setPreviousVisible();
 
         addStep(createFragment(new ANV1RegistrationStep()));
         addStep(createFragment(new ANV1MedicalHistoryStep()));
@@ -36,6 +37,10 @@ public class ANV1StepsActivity extends BaseStepperActivity {
         addStep(createFragment(new ANV1ClinicalAssessmentStep()));
         addStep(createFragment(new ANV1ScreeningStep()));
         addStep(createFragment(new ANV1ImmunizationsAndSupplementsStep()));
+
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
 
         super.onCreate(savedInstanceState);
     }

@@ -20,7 +20,6 @@ import h2020.mhealth4afrika.R;
 import h2020.mhealth4afrika.activities.HelpActivity;
 import h2020.mhealth4afrika.activities.LanguageSettings;
 import h2020.mhealth4afrika.activities.MainActivity;
-import h2020.mhealth4afrika.activities.SettingsActivity;
 import h2020.mhealth4afrika.utils.SnackUtils;
 
 
