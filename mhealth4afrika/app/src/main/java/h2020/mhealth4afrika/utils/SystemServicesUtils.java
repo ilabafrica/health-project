@@ -9,8 +9,8 @@ import android.location.LocationManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GooglePlayServicesUtil;
+//import com.google.android.gms.common.ConnectionResult;
+//import com.google.android.gms.common.GooglePlayServicesUtil;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -53,12 +53,13 @@ public class SystemServicesUtils {
     // Check for Google Play Services
     public static boolean isGooglePlayServicesAvailable(Context ctx) {
 
-        int status = GooglePlayServicesUtil.isGooglePlayServicesAvailable(ctx);
-        if (ConnectionResult.SUCCESS == status) {
-            return true;
-        } else {
-            return false;
-        }
+//        int status = GooglePlayServicesUtil.isGooglePlayServicesAvailable(ctx);
+//        if (ConnectionResult.SUCCESS == status) {
+//            return true;
+//        } else {
+//            return false;
+//        }
+        return false;
     }
 
     // Check whether location providers (GPS or Network) are enabled

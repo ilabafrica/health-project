@@ -13,11 +13,7 @@ import com.github.fcannizzaro.materialstepper.AbstractStep;
 import h2020.mhealth4afrika.R;
 import h2020.mhealth4afrika.adapters.CustomAdapterFlags;
 
-/**
- * Created by imukewa on 06/09/2016.
- */
-
-public class Select_Coutry extends AbstractStep {
+public class SelectCountry extends AbstractStep {
     private final static String CLICK = "click";
     private Button button;
     private int i = 1;
@@ -29,8 +25,8 @@ public class Select_Coutry extends AbstractStep {
         View rootView = inflater.inflate(R.layout.fragment_select_counrty, container, false);
 
         ListView simpleList;
-        String countryList[] = {"India", "China", "australia", "Portugle", "America", "NewZealand"};
-        int flags[] = {R.drawable.india, R.drawable.china, R.drawable.australia, R.drawable.portugle, R.drawable.america, R.drawable.new_zealand};
+        String countryList[] = {"Kenya", "Malawi", "South Africa", "Ethiopia"};
+        int flags[] = {R.drawable.australia, R.drawable.australia, R.drawable.australia, R.drawable.australia, R.drawable.australia, R.drawable.australia};
 
 
         simpleList = (ListView) rootView.findViewById(R.id.simpleListView);

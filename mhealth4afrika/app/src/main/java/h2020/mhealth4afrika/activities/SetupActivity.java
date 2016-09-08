@@ -13,7 +13,7 @@ import com.github.fcannizzaro.materialstepper.style.TabStepper;
 
 import h2020.mhealth4afrika.R;
 import h2020.mhealth4afrika.activities.fragments.steps.setup.Register;
-import h2020.mhealth4afrika.activities.fragments.steps.setup.Select_Coutry;
+import h2020.mhealth4afrika.activities.fragments.steps.setup.SelectCountry;
 import h2020.mhealth4afrika.activities.fragments.steps.setup.Select_District;
 import h2020.mhealth4afrika.activities.fragments.steps.setup.Select_Province;
 
@@ -38,7 +38,7 @@ public class SetupActivity extends TabStepper {
 
 
 
-        addStep(createFragment(new Select_Coutry()));
+        addStep(createFragment(new SelectCountry()));
         addStep(createFragment(new Select_Province()));
         addStep(createFragment(new Select_District()));
         addStep(createFragment(new Register()) );
