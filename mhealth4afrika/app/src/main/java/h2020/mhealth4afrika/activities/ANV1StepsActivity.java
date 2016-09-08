@@ -22,14 +22,7 @@ import h2020.mhealth4afrika.activities.fragments.steps.anv1.ANV1ScreeningStep;
 public class ANV1StepsActivity extends BaseStepperActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        boolean linear = false;
-
-        setErrorTimeout(1500);
-        setLinear(linear);
         setTitle("Antenatal Visit");
-        setAlternativeTab(false);
-        setStartPreviousButton();
-        setPreviousVisible();
 
         addStep(createFragment(new ANV1RegistrationStep()));
         addStep(createFragment(new ANV1MedicalHistoryStep()));
@@ -37,10 +30,6 @@ public class ANV1StepsActivity extends BaseStepperActivity {
         addStep(createFragment(new ANV1ClinicalAssessmentStep()));
         addStep(createFragment(new ANV1ScreeningStep()));
         addStep(createFragment(new ANV1ImmunizationsAndSupplementsStep()));
-
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
 
         super.onCreate(savedInstanceState);
     }

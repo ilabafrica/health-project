@@ -12,10 +12,27 @@ import com.github.fcannizzaro.materialstepper.AbstractStep;
 import com.github.fcannizzaro.materialstepper.style.TabStepper;
 
 import h2020.mhealth4afrika.R;
+import h2020.mhealth4afrika.activities.fragments.steps.anv2.ANV2ClinicalAssessmentStep;
+import h2020.mhealth4afrika.activities.fragments.steps.anv2.ANV2ImmunizationsAndSupplementsStep;
+import h2020.mhealth4afrika.activities.fragments.steps.anv2.ANV2ScreeningStep;
 
 public class BaseStepperActivity extends TabStepper {
     private int i = 1;
     private Context context = BaseStepperActivity.this;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        boolean linear = false;
+
+        setErrorTimeout(1500);
+        setLinear(linear);
+        setAlternativeTab(false);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
+
+        super.onCreate(savedInstanceState);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
