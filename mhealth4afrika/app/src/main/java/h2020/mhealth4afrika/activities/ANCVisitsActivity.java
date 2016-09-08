@@ -28,22 +28,19 @@ import java.util.List;
 import java.util.Locale;
 
 import h2020.mhealth4afrika.R;
-import h2020.mhealth4afrika.adapters.MainActivityAdapter;
+import h2020.mhealth4afrika.adapters.ANCVisitsAdapter;
 import h2020.mhealth4afrika.adapters.ExpandableListAdapter;
 import h2020.mhealth4afrika.helpers.WidgetHelper;
 import h2020.mhealth4afrika.utils.SessionManager;
 import h2020.mhealth4afrika.utils.SnackUtils;
 
-public class MainActivity extends AppCompatActivity implements OnGroupClickListener, OnChildClickListener {
-
-
-    public static String[] prgmNameList = {"Health Facilities", "ANC Visits", "Patients"};
+public class ANCVisitsActivity extends AppCompatActivity implements OnGroupClickListener, OnChildClickListener {
+    public static String[] prgmNameList = {"Visit 1", "Visit 2", "Visit 3"};
     public static int[] prgmImages = {R.drawable.ic_launcher2, R.drawable.ic_launcher2, R.drawable.ic_launcher2};
+
     GridView gridView;
     private CoordinatorLayout rootLayout;
-
     private WidgetHelper widgets;
-
     private List<String> listDataHeader;
     private HashMap<String, List<String>> listDataChild;
     private ActionBarDrawerToggle mDrawerToggle;
@@ -58,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements OnGroupClickListe
     private Toolbar toolBar;
     private TypedArray mIcons;
 
-    private Context ctx = MainActivity.this;
+    private Context ctx = ANCVisitsActivity.this;
 
     private Locale myLocale;
 
@@ -67,9 +64,7 @@ public class MainActivity extends AppCompatActivity implements OnGroupClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         rootLayout = (CoordinatorLayout) findViewById(R.id.rootLayout);
-
         widgets = new WidgetHelper(ctx);
 
         // load the expandable list data
@@ -95,26 +90,37 @@ public class MainActivity extends AppCompatActivity implements OnGroupClickListe
 
         }
 
-
         gridView = (GridView) findViewById(R.id.gridView1);
-        gridView.setAdapter(new MainActivityAdapter(this, prgmNameList, prgmImages));
+        gridView.setAdapter(new ANCVisitsAdapter(this, prgmNameList, prgmImages));
 
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            Intent intent;
 
-            if (gridView.getItemAtPosition(position).equals(0)) {
-                intent = new Intent(getApplicationContext(), HealthFacilityActivity.class);
-                startActivity(intent);
-            } else if (gridView.getItemAtPosition(position).equals(1)) {
-                intent = new Intent(getApplicationContext(), ANCVisitsActivity.class);
-                startActivity(intent);
-            } else if (gridView.getItemAtPosition(position).equals(2)) {
-                intent = new Intent(getApplicationContext(), PatientsActivity.class);
-                startActivity(intent);
-            }
+                Intent intent;
+
+                if (gridView.getItemAtPosition(position).equals(0)) {
+
+
+                    intent = new Intent(getApplicationContext(), HealthFacilityActivity.class);
+                    startActivity(intent);
+
+
+                } else if (gridView.getItemAtPosition(position).equals(1)) {
+
+
+                    intent = new Intent(getApplicationContext(), ANCVisitsActivity.class);
+                    startActivity(intent);
+
+
+                } else if (gridView.getItemAtPosition(position).equals(2)) {
+
+
+                    intent = new Intent(getApplicationContext(), PatientsActivity.class);
+                    startActivity(intent);
+
+                }
             }
         });
 
@@ -194,10 +200,18 @@ public class MainActivity extends AppCompatActivity implements OnGroupClickListe
     }
 
     public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long arg4) {
+
         // Handle child click events
+
         if (groupPosition == 1) {
+
+
         } else if (groupPosition == 2) {
+
+
         } else if (groupPosition == 3) {
+
+
         }
 
         return true;

@@ -12,9 +12,6 @@ import com.github.fcannizzaro.materialstepper.AbstractStep;
 import com.github.fcannizzaro.materialstepper.style.TabStepper;
 
 import h2020.mhealth4afrika.R;
-import h2020.mhealth4afrika.activities.fragments.steps.anv2.ANV2ClinicalAssessmentStep;
-import h2020.mhealth4afrika.activities.fragments.steps.anv2.ANV2ImmunizationsAndSupplementsStep;
-import h2020.mhealth4afrika.activities.fragments.steps.anv2.ANV2ScreeningStep;
 
 public class BaseStepperActivity extends TabStepper {
     private int i = 1;

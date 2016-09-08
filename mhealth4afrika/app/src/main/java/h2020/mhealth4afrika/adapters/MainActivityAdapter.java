@@ -11,14 +11,14 @@ import android.widget.TextView;
 import h2020.mhealth4afrika.R;
 import h2020.mhealth4afrika.activities.MainActivity;
 
-public class CustomAdapter extends BaseAdapter {
+public class MainActivityAdapter extends BaseAdapter {
 
     private static LayoutInflater inflater = null;
     String[] result;
     Context context;
     int[] imageId;
 
-    public CustomAdapter(MainActivity landing, String[] prgmNameList, int[] prgmImages) {
+    public MainActivityAdapter(MainActivity landing, String[] prgmNameList, int[] prgmImages) {
 
         result = prgmNameList;
         context = landing;
