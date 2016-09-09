@@ -12,7 +12,7 @@ import com.github.fcannizzaro.materialstepper.AbstractStep;
 
 import h2020.mhealth4afrika.R;
 
-public class Select_Province extends AbstractStep {
+public class SelectProvince extends AbstractStep {
     private final static String CLICK = "click";
     private Button button;
     private int i = 1;

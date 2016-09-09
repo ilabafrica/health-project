@@ -14,8 +14,8 @@ import com.github.fcannizzaro.materialstepper.style.TabStepper;
 import h2020.mhealth4afrika.R;
 import h2020.mhealth4afrika.activities.fragments.steps.setup.Register;
 import h2020.mhealth4afrika.activities.fragments.steps.setup.SelectCountry;
-import h2020.mhealth4afrika.activities.fragments.steps.setup.Select_District;
-import h2020.mhealth4afrika.activities.fragments.steps.setup.Select_Province;
+import h2020.mhealth4afrika.activities.fragments.steps.setup.SelectDistrict;
+import h2020.mhealth4afrika.activities.fragments.steps.setup.SelectProvince;
 
 
 public class SetupActivity extends TabStepper {
@@ -36,22 +36,15 @@ public class SetupActivity extends TabStepper {
         setPreviousVisible();
 
 
-
-
         addStep(createFragment(new SelectCountry()));
-        addStep(createFragment(new Select_Province()));
-        addStep(createFragment(new Select_District()));
+        addStep(createFragment(new SelectProvince()));
+        addStep(createFragment(new SelectDistrict()));
         addStep(createFragment(new Register()) );
 
-
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         getSupportActionBar().setHomeButtonEnabled(true);
 
         super.onCreate(savedInstanceState);
-
-
     }
 
 
@@ -74,14 +67,12 @@ public class SetupActivity extends TabStepper {
 
             @Override
             public void onClick(DialogInterface dialog, int which) {
+            // Move to Login Activity
+            Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
 
-
-                // Move to Login Activity
-                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
-
-                finish();
+            finish();
             }
         });
 
@@ -122,9 +113,6 @@ public class SetupActivity extends TabStepper {
 
         return super.onOptionsItemSelected(item);
     }
-
-
-
 }
 
 
